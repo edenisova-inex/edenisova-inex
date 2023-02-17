@@ -217,7 +217,7 @@
 		},
 		{
 			name: "ТрикиВу",
-			score: 140,
+			score: 160,
 			description_en: '',
 			description: '3 последовательных вращения на 180°. Начинается элемент сплитвилом, за которым следует вращение на корме с вертикальным углом более 60° том же направлении, что и первое вращение сплитвила. Выполняется с использованием только одной лопатки весла.',
 			double: true,
@@ -230,9 +230,24 @@
 			artistic: true,
 			playSpots: ['hole', 'wave']
 		},
-		/*{
+		{
 			name: "ВуТрики",
-			score: 160,
+			score: 120,
+			description_en: '',
+			description: '',
+			double: true,
+			clean: false,
+			superClean: false,
+			air: true,
+			huge: false,
+			link: true,
+			link_elements: {},
+			artistic: true,
+			playSpots: ['hole', 'wave']
+		},
+		{
+			name: "Трики Луп",
+			score: 180,
 			description_en: '',
 			description: '',
 			double: true,
@@ -244,7 +259,7 @@
 			link_elements: {},
 			artistic: true,
 			playSpots: ['hole', 'wave']
-		},*/
+		},
 		{
 			name: "Луп",
 			score: 60,
@@ -278,7 +293,7 @@
 		/*-------------------*/
 		{
 			name: "Спейс Годзилла",
-			score: 90,
+			score: 100,
 			description_en: '',
 			description: 'Воздушный луп с поворотом на 90° или более в середине сальто.',
 			double: true,
@@ -296,6 +311,21 @@
 			score: 150,
 			description_en: '',
 			description: 'Вращение по горизонтали на как минимум 180°, начинающееся с носового серфа, переходящее затем в кормовой луп или кормовой картвил.',
+			double: true,
+			clean: true,
+			superClean: true,
+			air: true,
+			huge: false,
+			link: true,
+			link_elements: {},
+			artistic: true,
+			playSpots: ['hole', 'wave']
+		},
+		{
+			name: "Лунар Луп",
+			score: 170,
+			description_en: '',
+			description: 'Вращение по горизонтали на как минимум 180°, начинающееся с носового серфа, переходящее затем в кормовой луп',
 			double: true,
 			clean: true,
 			superClean: true,
@@ -397,7 +427,6 @@
 			artistic: true,
 			playSpots: ['hole', 'wave']
 		},
-
 		{
 			name: "Феликс",
 			score: 40,
@@ -446,7 +475,7 @@
 
 		{
 			name: "Трофи мув 1",
-			score: 100,
+			score: 50,
 			description_en: '',
 			description: 'Элемент, не имеющий определения в данной таблице',
 			double: true,
@@ -494,9 +523,9 @@
 	// clean:		{name: 'Клин',				title:'Cl',		class:'switch',	code:'clean',		clear:'superClean',	scores: [{from: 0,to: 30,score: 10},{from: 30,to: 90,score: 30},{from: 90,to: 1000,score: 50}]},
 		clean:		{name: 'Клин',				title:'Cl',		class:'switch',	code:'clean',							scores: [{from: 0,to: 30,score: 10},{from: 30,to: 90,score: 30},{from: 90,to: 1000,score: 50}]},
 		superClean: {name: 'Супер клин',		title:'SCl',	class:'switch',	code:'superClean',						scores: [{from: 0,to: 30,score: 20},{from: 30,to: 90,score: 40},{from: 90,to: 1000,score: 60}]},
-		air:		{name: 'Воздушный (Эйр)',	title:'A',		class:'depend',	code:'air',			manage:'huge',		scores: [{from: 0,to: 30,score: 10},{from: 30,to: 90,score: 30},{from: 90,to: 1000,score: 50}]},
+		air:		{name: 'Воздушный (Эйр)',	title:'A',		class:'depend',	code:'air',			manage:'huge',		scores: [{from: 0,to: 30,score: 10},{from: 30,to: 90,score: 30},{from: 90,to: 1000,score: 40}]},
 		huge:		{name: 'Хьюдж',				title:'H',		class:'depend',	code:'huge',		depend:'air',		scores: [{from: 0,to: 30,score: 20},{from: 30,to: 90,score: 40},{from: 90,to: 1000,score: 50}]},
-		link:		{name: 'Связки',			title:'Li',		class:'',		code:'link',							scores: [{from: 0,to: 30,score: 10},{from: 30,to: 90,score: 30},{from: 90,to: 1000,score: 40}]},
+		link:		{name: 'Связки',			title:'Li',		class:'',		code:'link',							scores: [{from: 0,to: 30,score: 10},{from: 30,to: 90,score: 20},{from: 90,to: 1000,score: 30}]},
 		artistic:	{name: 'Трофи',				title:'Trp',	class:'',		code:'artistic',						scores: [{from: 0,to: 30,score:  0},{from: 30,to: 90,score: 10},{from: 90,to: 1000,score: 10}]}
 	}
 	window.g_elements_pool = [
